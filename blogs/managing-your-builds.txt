@@ -1,0 +1,12 @@
+Managing your builds
+
+Firstly, if you're wondering why this post is in raw text, read this -> https://www.github.com/SrFluff/markDown
+Anyways, managing your compiled binaries. If you've ever tried to manage you precompiled binaries, you know it's a pain in the ass.
+Managing different operating systems and different architectures, then it gets even more complicated if you want to store different
+versions. For me personally I use one big ass Git repository that has a folder for each project, then each project has a
+directory for each architecture. Then for every architecture there's a folder for each operating system. Within the operating system
+there's a directory for each version, and only there is the precompiled binary stored. I got so tired of writing super long zip commands
+to package releases so I wrote like twenty lines of Python and automated it...I would reccommend saying 'fuck all that' and forcing
+your consumers to compile it themselves, because it really isn't that hard if your pojects aren't crazy complex. I'm sure there are
+better, pre-existing, tools for this, but fuck that I'm making my own tools. I'll probably write a blog post about how I wrote my own
+build systems/scripts, or how I went about writing version control software to suit MY needs. Okay, that's all from me, byeee :3
