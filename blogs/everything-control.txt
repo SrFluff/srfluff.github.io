@@ -1,0 +1,15 @@
+Everything control
+
+Version control is nice if you want to keep track of changes to a project, but it can do so much more. Git out of the box can do a bit
+more than just trackings diffs and adding commit mesages. The advent of remote repositories, and the ease at which you can implement them
+make code syncing so much nicer. Beyond that I'm not the most familiar with Git, the solution? Read the fucking manual? No, write my own
+version control, better described as everything control. Taking heavy inspiration from Fossil by D. Richard Hipp, my system includes:
+- Bug tracking
+- Wiki management
+- Todo system
+- Remote repositories
+And the cool thing is...it's tailored to my needs, all the syntax, all the file structures, it's all built for me, that is the benefit of
+being highly opinionated and knowing what you need. That is the benefit to writing your own tools. I noticed that I rarely, if ever, used
+branches, hence: no branches with my tool. I often needed to push to more than one remote platform, pushing is now incredibly portable.
+Tired of writing long ass READMEs? WIKIS, FUCKING WIKIS, THEY'RE SO AWESOME. I'm sure I won't publish this tool, but this is my call to
+you, write your own tools, please.
