@@ -1,0 +1,25 @@
+Building with scripts
+
+Make is nice. Fuck, Make is really nice. It's concise, portable, and lightweight. Though I'm not the biggest fan of constantly having to
+rewrite Makefiles but only slightly. My typical C Makefile looks like so:
+
+COMPILER=clang
+OUTPUT=my_project
+SRC=main.c
+CFLAGS=-O3 -march=native
+
+default:
+	$(COMPILER) $(CFLAGS) -o $(OUTPUT) $(SRC)
+
+install:
+	cp $(OUTPUT) /usr/local/bin
+
+And so I grew tired of having to constantly rewrite my Makefiles just to make minor edits, so I made a few tools.
+The main one is fmake--as it was the first. It reads .fmake files for specific parameters then executing based on those parameters. The
+next one I made was jizz, a program for streamlining Java builds that reads its own config, .jizz files. Though recently I've migrated
+to fconf as my primary config language. You can see it here -> https://www.github.com/SrFluff/libfconf
+And most recently I've concocted pen, a simple one for python projects. It handles dependencies, lockfiles, building, cleaning, serving,
+syntax checking, and linting (thx Ruff). It uses TOML because by that point I gave up on rewriting config parsers. Making build tools
+is a good exercise in learning to make things flexible and adaptable. But it also helps being opinionated and knowing what you need.
+Down the pipeline I'll probably rewrite fmake to use fconf for config, but we'll see. You should build your own build system. Then use
+that build system to build your build system. Make sense? Good.
