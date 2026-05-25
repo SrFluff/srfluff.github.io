@@ -1,0 +1,20 @@
+Setting Up A Writerdeck
+
+So i recently found out about the concept of writerdecks; devices that exist for the sole purpose of writing.
+These machines rarely have anything more than an internet connection and a text editor. Usually they don't 
+even have a GUI. And best of all, they're based on Linux; meaning you can DIY them yourselves. I recently
+turned an old thinkpad I had lying around into a writerdeck. It's so minimal I can list you the software I
+installed:
+	vim & vimwiki
+	tmux
+	ly
+	man-db
+	networkmanager
+	terminus-fonts
+I've got it configured to launch directly into a tmux session and open Vim so I can start typing 
+instantantly. The difference between this and a normal Arch install is that I won't use it for coding or
+music, JUST WRITING. For all the other fun stuff I've got another partition on the disk for an Arch install
+running Hyprland and all my coding stuff, though I've really been using my Macbook Neo for coding...hmmmm.
+I also increased the font size for the tty (that's why I had to install terminus-fonts) because the default 
+kernel font is too small for the screen of this things (Thinkpad x240). Alright, I think I'll scp this to my
+server and have it push from there. See ya :P
