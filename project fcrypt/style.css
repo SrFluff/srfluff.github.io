@@ -1,0 +1,24 @@
+body {
+	font-family: sans-serif;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+}
+
+hr {
+	border: none;
+	border-top: 2px solid #c1121f;
+}
+
+a {
+	color: #c1121f;
+	font-weight: bold;
+}
+
+i, h2 {
+	color: #c1121f;
+}
+
+code {
+	color: #c1121f;
+}
