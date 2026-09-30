@@ -25,6 +25,16 @@
 		to allow password-derived keys with the use of <code>base.passwd_gen_key()
 		</code>. This update also comes with a version bump in <code>__init__.py
 		</code>.
+		<br><br>
+		<b>(libfcrypt) Update 1.2.1 released.</b><br><br>
+		Update 1.2.1 brings several new functions and features. Most of these relate
+		to binary encryption and decryption, but update 1.2.1 also brings a new,
+		crucial function in <code>base.py</code>: <code>base.check_key()</code>,
+		this function ensures all keys passed to other functions are valid. Along
+		with <code>base.check_key()</code> 1.2.1 also introduces a new file <code>
+		errors.py</code> as of right now it only contains one error <code>InvalidKey
+		</code>. As for why it's not update 1.2.0, that's due to a minor issue
+		involving relative imports.
 		</p>
 	</body>
 </html>
